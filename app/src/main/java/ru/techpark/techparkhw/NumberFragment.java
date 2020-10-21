@@ -19,8 +19,8 @@ public class NumberFragment extends Fragment {
             return v;
         }
 
-        int mValue = getArguments().getInt("value", -1);
-        int mColor = getArguments().getInt("color", Color.GREEN);
+        int mValue = getArguments().getInt("numberValue", -1);
+        int mColor = getArguments().getInt("numberColor", Color.GREEN);
 
         TextView view = v.findViewById(R.id.big_number);
         view.setText(String.valueOf(mValue));
